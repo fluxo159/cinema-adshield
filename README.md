@@ -1,5 +1,7 @@
 <p align="center"><img src="docs/cover.svg" alt="CinemaAdShield" width="100%"></p>
 
+[![Checks](https://github.com/fluxo159/cinema-adshield/actions/workflows/checks.yml/badge.svg)](https://github.com/fluxo159/cinema-adshield/actions/workflows/checks.yml)
+
 # CinemaAdShield
 
 **Safari Web Extension для блокировки рекламных запросов и отвлекающих элементов на поддерживаемых видеосайтах.** Исходники расширения и оболочки для macOS.
