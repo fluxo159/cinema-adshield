@@ -1,0 +1,82 @@
+/* Cinema AdShield - High Priority Cosmetic Styling */
+
+/* 1. Reset Casino Wallpapers on Body & HTML */
+html, body {
+    background-image: none !important;
+    background-color: #141414 !important;
+}
+
+/* 2. Hide Known Banner & Ad Containers */
+#kinogo-banner,
+.kinogo-adv,
+.kinogo-app,
+.app-banner,
+.app-block,
+.kino-app,
+.sticky-adv,
+.fixed-banner,
+.commercial-block,
+.ad_box,
+.adsbygoogle,
+.ya-partner,
+.mgbox,
+.mgline,
+.lucky-block,
+.teaser-block,
+.clickbait-block,
+.native-ad,
+.sponsored-post,
+.full-banner,
+.full-adv,
+.b-adv,
+.b-adv-side,
+.b-adv-side__item,
+.b-adv__top,
+.b-adv__bottom,
+.rezka-adv,
+.lordfilm-adv,
+.lf-banner,
+.filmix-adv,
+.zetflix-adv,
+.zf-banner,
+.seasonvar-adv,
+.click-under,
+.pop-under,
+.click-overlay,
+a[target="_blank"][style*="position: fixed"],
+a[target="_blank"][style*="position: absolute"][style*="z-index"],
+/* YouTube Cosmetic Ads */
+ytd-action-companion-ad-renderer,
+ytd-banner-promo-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-video-renderer,
+ytd-statement-banner-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-ad-slot-renderer,
+ytd-player-legacy-desktop-watch-ads-renderer,
+#masthead-ad,
+#player-ads,
+.ytp-ad-overlay-container,
+.ytp-ad-message-container,
+.ytp-ad-progress-list,
+ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+ytd-merch-shelf-renderer {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 3. Ensure Player & Main Video Surface are 100% Intact */
+#movie_player,
+.html5-video-player,
+.html5-main-video,
+video.video-stream,
+#player,
+.player-box,
+.player-container {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

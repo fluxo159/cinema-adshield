@@ -1,0 +1,14 @@
+/.DS_Store
+/CODEX.md
+/build/
+/CinemaAdShield.app/
+/Запустить.command
+**/xcuserdata/
+**/*.xcuserstate
+**/DerivedData/
+**/.DS_Store
+*.log
+*.zip
+*.p12
+*.mobileprovision
+*.cer

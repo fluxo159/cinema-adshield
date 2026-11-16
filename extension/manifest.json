@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "Cinema AdShield",
+  "version": "2.0.1",
+  "description": "Мощный блокировщик рекламы для Safari. Блокирует баннеры, попандеры и пре-роллы на YouTube и сайтах с фильмами. Не трогает обычные сайты.",
+  "author": "Cinema AdShield Team",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Cinema AdShield",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*",
+    "https://*.youtu.be/*",
+    "https://*.kinogo.biz/*",
+    "https://*.kinogo.net/*",
+    "https://*.hdrezka.ag/*",
+    "https://*.rezka.ag/*",
+    "https://*.lordfilm.com/*",
+    "https://*.filmix.ac/*",
+    "https://*.zetflix.net/*",
+    "https://*.seasonvar.ru/*",
+    "https://*.kinopoisk.ru/*",
+    "https://*.ivi.ru/*",
+    "https://*.okko.tv/*",
+    "https://*.rutracker.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://*.youtu.be/*",
+        "https://*.kinogo.biz/*",
+        "https://*.kinogo.net/*",
+        "https://*.hdrezka.ag/*",
+        "https://*.rezka.ag/*",
+        "https://*.lordfilm.com/*",
+        "https://*.filmix.ac/*",
+        "https://*.zetflix.net/*",
+        "https://*.seasonvar.ru/*",
+        "https://*.kinopoisk.ru/*",
+        "https://*.ivi.ru/*",
+        "https://*.okko.tv/*",
+        "https://*.rutracker.org/*"
+      ],
+      "js": [
+        "content/cinema_shield.js"
+      ],
+      "css": [
+        "content/shield_styles.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ad_rules",
+        "enabled": true,
+        "path": "rules/ad_rules.json"
+      }
+    ]
+  },
+  "web_accessible_resources": []
+}

@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BA7A7C9304631C400DD056B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A7C8304631C400DD056B /* AppDelegate.swift */; };
+		0BA7A7CD304631C400DD056B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7CB304631C400DD056B /* Main.html */; };
+		0BA7A7CF304631C400DD056B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7CE304631C400DD056B /* Icon.png */; };
+		0BA7A7D1304631C400DD056B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7D0304631C400DD056B /* Style.css */; };
+		0BA7A7D3304631C400DD056B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7D2304631C400DD056B /* Script.js */; };
+		0BA7A7D5304631C400DD056B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A7D4304631C400DD056B /* ViewController.swift */; };
+		0BA7A7D8304631C400DD056B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7D6304631C400DD056B /* Main.storyboard */; };
+		0BA7A7DA304631C400DD056B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7D9304631C400DD056B /* Assets.xcassets */; };
+		0BA7A7E1304631C500DD056B /* CinemaAdShield Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0BA7A7E0304631C500DD056B /* CinemaAdShield Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BA7A7E6304631C500DD056B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A7E5304631C500DD056B /* SafariWebExtensionHandler.swift */; };
+		0BA7A7F8304631C500DD056B /* popup in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F2304631C500DD056B /* popup */; };
+		0BA7A7F9304631C500DD056B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F3304631C500DD056B /* background.js */; };
+		0BA7A7FA304631C500DD056B /* content in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F4304631C500DD056B /* content */; };
+		0BA7A7FB304631C500DD056B /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F5304631C500DD056B /* icons */; };
+		0BA7A7FC304631C500DD056B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F6304631C500DD056B /* manifest.json */; };
+		0BA7A7FD304631C500DD056B /* rules in Resources */ = {isa = PBXBuildFile; fileRef = 0BA7A7F7304631C500DD056B /* rules */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BA7A7E2304631C500DD056B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BA7A7BD304631C400DD056B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BA7A7DF304631C500DD056B;
+			remoteInfo = "CinemaAdShield Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BA7A7ED304631C500DD056B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0BA7A7E1304631C500DD056B /* CinemaAdShield Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0BA7A7C5304631C400DD056B /* CinemaAdShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaAdShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BA7A7C8304631C400DD056B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0BA7A7CC304631C400DD056B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		0BA7A7CE304631C400DD056B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0BA7A7D0304631C400DD056B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		0BA7A7D2304631C400DD056B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		0BA7A7D4304631C400DD056B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BA7A7D7304631C400DD056B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0BA7A7D9304631C400DD056B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BA7A7DB304631C400DD056B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA7A7E0304631C500DD056B /* CinemaAdShield Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CinemaAdShield Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BA7A7E5304631C500DD056B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0BA7A7E7304631C500DD056B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA7A7F2304631C500DD056B /* popup */ = {isa = PBXFileReference; lastKnownFileType = folder; name = popup; path = Resources/popup; sourceTree = "<group>"; };
+		0BA7A7F3304631C500DD056B /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		0BA7A7F4304631C500DD056B /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content; path = Resources/content; sourceTree = "<group>"; };
+		0BA7A7F5304631C500DD056B /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		0BA7A7F6304631C500DD056B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		0BA7A7F7304631C500DD056B /* rules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = rules; path = Resources/rules; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BA7A7C2304631C400DD056B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BA7A7DD304631C500DD056B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BA7A7BC304631C400DD056B = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7C7304631C400DD056B /* CinemaAdShield */,
+				0BA7A7E4304631C500DD056B /* CinemaAdShield Extension */,
+				0BA7A7C6304631C400DD056B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0BA7A7C6304631C400DD056B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7C5304631C400DD056B /* CinemaAdShield.app */,
+				0BA7A7E0304631C500DD056B /* CinemaAdShield Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BA7A7C7304631C400DD056B /* CinemaAdShield */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7C8304631C400DD056B /* AppDelegate.swift */,
+				0BA7A7D4304631C400DD056B /* ViewController.swift */,
+				0BA7A7D6304631C400DD056B /* Main.storyboard */,
+				0BA7A7D9304631C400DD056B /* Assets.xcassets */,
+				0BA7A7DB304631C400DD056B /* Info.plist */,
+				0BA7A7CA304631C400DD056B /* Resources */,
+			);
+			path = CinemaAdShield;
+			sourceTree = "<group>";
+		};
+		0BA7A7CA304631C400DD056B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7CB304631C400DD056B /* Main.html */,
+				0BA7A7CE304631C400DD056B /* Icon.png */,
+				0BA7A7D0304631C400DD056B /* Style.css */,
+				0BA7A7D2304631C400DD056B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BA7A7E4304631C500DD056B /* CinemaAdShield Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7F1304631C500DD056B /* Resources */,
+				0BA7A7E5304631C500DD056B /* SafariWebExtensionHandler.swift */,
+				0BA7A7E7304631C500DD056B /* Info.plist */,
+			);
+			path = "CinemaAdShield Extension";
+			sourceTree = "<group>";
+		};
+		0BA7A7F1304631C500DD056B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A7F2304631C500DD056B /* popup */,
+				0BA7A7F3304631C500DD056B /* background.js */,
+				0BA7A7F4304631C500DD056B /* content */,
+				0BA7A7F5304631C500DD056B /* icons */,
+				0BA7A7F6304631C500DD056B /* manifest.json */,
+				0BA7A7F7304631C500DD056B /* rules */,
+			);
+			name = Resources;
+			path = "CinemaAdShield Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BA7A7C4304631C400DD056B /* CinemaAdShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BA7A7EE304631C500DD056B /* Build configuration list for PBXNativeTarget "CinemaAdShield" */;
+			buildPhases = (
+				0BA7A7C1304631C400DD056B /* Sources */,
+				0BA7A7C2304631C400DD056B /* Frameworks */,
+				0BA7A7C3304631C400DD056B /* Resources */,
+				0BA7A7ED304631C500DD056B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BA7A7E3304631C500DD056B /* PBXTargetDependency */,
+			);
+			name = CinemaAdShield;
+			packageProductDependencies = (
+			);
+			productName = CinemaAdShield;
+			productReference = 0BA7A7C5304631C400DD056B /* CinemaAdShield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BA7A7DF304631C500DD056B /* CinemaAdShield Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BA7A7EA304631C500DD056B /* Build configuration list for PBXNativeTarget "CinemaAdShield Extension" */;
+			buildPhases = (
+				0BA7A7DC304631C500DD056B /* Sources */,
+				0BA7A7DD304631C500DD056B /* Frameworks */,
+				0BA7A7DE304631C500DD056B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CinemaAdShield Extension";
+			packageProductDependencies = (
+			);
+			productName = "CinemaAdShield Extension";
+			productReference = 0BA7A7E0304631C500DD056B /* CinemaAdShield Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BA7A7BD304631C400DD056B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					0BA7A7C4304631C400DD056B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					0BA7A7DF304631C500DD056B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 0BA7A7C0304631C400DD056B /* Build configuration list for PBXProject "CinemaAdShield" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BA7A7BC304631C400DD056B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0BA7A7C6304631C400DD056B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BA7A7C4304631C400DD056B /* CinemaAdShield */,
+				0BA7A7DF304631C500DD056B /* CinemaAdShield Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BA7A7C3304631C400DD056B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA7A7CF304631C400DD056B /* Icon.png in Resources */,
+				0BA7A7D8304631C400DD056B /* Main.storyboard in Resources */,
+				0BA7A7D3304631C400DD056B /* Script.js in Resources */,
+				0BA7A7CD304631C400DD056B /* Main.html in Resources */,
+				0BA7A7DA304631C400DD056B /* Assets.xcassets in Resources */,
+				0BA7A7D1304631C400DD056B /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BA7A7DE304631C500DD056B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA7A7FD304631C500DD056B /* rules in Resources */,
+				0BA7A7FA304631C500DD056B /* content in Resources */,
+				0BA7A7FB304631C500DD056B /* icons in Resources */,
+				0BA7A7FC304631C500DD056B /* manifest.json in Resources */,
+				0BA7A7F9304631C500DD056B /* background.js in Resources */,
+				0BA7A7F8304631C500DD056B /* popup in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BA7A7C1304631C400DD056B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA7A7D5304631C400DD056B /* ViewController.swift in Sources */,
+				0BA7A7C9304631C400DD056B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BA7A7DC304631C500DD056B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA7A7E6304631C500DD056B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BA7A7E3304631C500DD056B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BA7A7DF304631C500DD056B /* CinemaAdShield Extension */;
+			targetProxy = 0BA7A7E2304631C500DD056B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0BA7A7CB304631C400DD056B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BA7A7CC304631C400DD056B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		0BA7A7D6304631C400DD056B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BA7A7D7304631C400DD056B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0BA7A7E8304631C500DD056B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BA7A7E9304631C500DD056B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0BA7A7EB304631C500DD056B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CinemaAdShield Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CinemaAdShield Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinema.CinemaAdShield.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0BA7A7EC304631C500DD056B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CinemaAdShield Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CinemaAdShield Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinema.CinemaAdShield.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0BA7A7EF304631C500DD056B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaAdShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CinemaAdShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinema.CinemaAdShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0BA7A7F0304631C500DD056B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CinemaAdShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CinemaAdShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cinema.CinemaAdShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BA7A7C0304631C400DD056B /* Build configuration list for PBXProject "CinemaAdShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA7A7E8304631C500DD056B /* Debug */,
+				0BA7A7E9304631C500DD056B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BA7A7EA304631C500DD056B /* Build configuration list for PBXNativeTarget "CinemaAdShield Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA7A7EB304631C500DD056B /* Debug */,
+				0BA7A7EC304631C500DD056B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BA7A7EE304631C500DD056B /* Build configuration list for PBXNativeTarget "CinemaAdShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BA7A7EF304631C500DD056B /* Debug */,
+				0BA7A7F0304631C500DD056B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BA7A7BD304631C400DD056B /* Project object */;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema AdShield</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-group">
+                <div class="shield-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M9 12l2 2 4-4" stroke="#00ff88" stroke-width="2.5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Cinema <span>AdShield</span></h1>
+                    <p class="subtitle">Защита для Safari</p>
+                </div>
+            </div>
+            <label class="toggle-switch">
+                <input type="checkbox" id="mainToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </header>
+
+        <!-- Current Site Card -->
+        <div class="site-card">
+            <div class="site-info">
+                <span class="site-label">Текущий сайт:</span>
+                <span class="site-domain" id="currentDomain">Загрузка...</span>
+            </div>
+            <button id="whitelistBtn" class="btn-whitelist" title="Отключить блокировку только для этого сайта">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                </svg>
+                <span>В белый список</span>
+            </button>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-value" id="pageBlockedCount">0</div>
+                <div class="stat-title">На странице</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="totalBlockedCount">0</div>
+                <div class="stat-title">Всего рекламы</div>
+            </div>
+        </div>
+
+        <!-- Action: Element Zapper -->
+        <div class="action-section">
+            <button id="zapperBtn" class="btn-zapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <line x1="12" y1="3" x2="12" y2="7"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                    <line x1="3" y1="12" x2="7" y2="12"></line>
+                    <line x1="17" y1="12" x2="21" y2="12"></line>
+                </svg>
+                <span>Уничтожить элемент на странице</span>
+            </button>
+            <p class="zapper-hint">Кликните на любой баннер или оверлей, чтобы удалить его навсегда</p>
+        </div>
+
+        <!-- Shield Status List -->
+        <div class="features-list">
+            <div class="feature-item">
+                <span class="feature-dot active"></span>
+                <span class="feature-name">Авто-очистка баннеров</span>
+                <span class="feature-status">ВКЛ</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-dot active"></span>
+                <span class="feature-name">Блокировка попандеров (казино)</span>
+                <span class="feature-status">ВКЛ</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-dot active"></span>
+                <span class="feature-name">Пропуск пре-роллов в плеере</span>
+                <span class="feature-status">ВКЛ</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>Cinema AdShield v1.0.0 • Safari Edition</span>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

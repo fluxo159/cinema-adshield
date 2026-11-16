@@ -1,0 +1,143 @@
+/* Cinema AdShield - Cosmetic Styles v2.0 */
+/* Applied ONLY where the content script is active */
+
+/* =============================================
+   STREAMING SITE AD BANNERS
+   ============================================= */
+#kinogo-banner,
+.kinogo-adv,
+.kinogo-app,
+.app-banner,
+.app-block,
+.kino-app,
+.sticky-adv,
+.fixed-banner,
+.commercial-block,
+.ad_box,
+.adsbygoogle,
+.ya-partner,
+.mgbox,
+.mgline,
+.lucky-block,
+.teaser-block,
+.clickbait-block,
+.native-ad,
+.sponsored-post,
+.full-banner,
+.full-adv,
+.b-adv,
+.b-adv-side,
+.b-adv-side__item,
+.b-adv__top,
+.b-adv__bottom,
+.rezka-adv,
+.lordfilm-adv,
+.lf-banner,
+.filmix-adv,
+.zetflix-adv,
+.zf-banner,
+.seasonvar-adv,
+.click-under,
+.pop-under,
+.click-overlay,
+.overlay-ad,
+.video-ad-overlay,
+[class*="casino-banner"],
+[id*="casino-banner"],
+[class*="popup-ad"],
+[id*="popup-ad"],
+/* External link overlays */
+a[target="_blank"][style*="position: fixed"],
+a[target="_blank"][style*="position: absolute"][style*="z-index"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+}
+
+/* =============================================
+   YOUTUBE COSMETIC ADS
+   ============================================= */
+ytd-action-companion-ad-renderer,
+ytd-banner-promo-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-video-renderer,
+ytd-statement-banner-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-ad-slot-renderer,
+ytd-display-ad-renderer,
+ytd-player-legacy-desktop-watch-ads-renderer,
+ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
+ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+ytd-merch-shelf-renderer,
+ytd-mealbar-promo-renderer,
+#masthead-ad,
+#player-ads,
+.ytp-ad-overlay-container,
+.ytp-ad-message-container,
+.ytp-ad-progress-list,
+.ytp-ad-module {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    pointer-events: none !important;
+}
+
+/* =============================================
+   PRESERVE PLAYER & VIDEO ELEMENTS
+   ============================================= */
+#movie_player,
+.html5-video-player,
+.html5-main-video,
+video.video-stream,
+video.html5-main-video,
+#player,
+.player-box,
+.player-container,
+.b-player,
+#player_box {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    pointer-events: auto !important;
+}
+
+/* =============================================
+   IFRAME AD BLOCKS (non-YouTube)
+   ============================================= */
+iframe[src*="doubleclick"],
+iframe[src*="googlesyndication"],
+iframe[src*="adservice"],
+iframe[src*="an.yandex"],
+iframe[src*="yabs.yandex"],
+iframe[src*="propellerads"],
+iframe[src*="popads"],
+iframe[src*="popcash"],
+iframe[src*="exoclick"],
+iframe[src*="monetag"],
+iframe[src*="hilltopads"],
+iframe[src*="clickadu"],
+iframe[src*="mgid"],
+iframe[src*="marketgid"],
+iframe[src*="taboola"],
+iframe[src*="outbrain"],
+iframe[src*="criteo"],
+iframe[src*="adriver"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* =============================================
+   ZAPPER CURSOR HINT
+   ============================================= */
+#_cinema_zapper_overlay {
+    cursor: crosshair !important;
+}
